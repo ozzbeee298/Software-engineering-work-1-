@@ -1,0 +1,79 @@
+:root{
+  --base-color: white;
+  --base-variant: #dbdde3;
+  --text-color: black;
+  --secondary-text: #262939;
+  --primary-color: #36393e;
+  --accent-color: #540e8e;
+}
+.darkmode{
+  --base-color: #36393e;
+  --base-variant: #232222;
+  --text-color: white;
+  --secondary-text: #262939;
+  --primary-color: #c5bfbf;
+  --accent-color: #540e8e;
+}
+#theme-switch{
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--base-variant);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  right: 20px
+}
+#theme-switch svg{
+  fill:var(--primary-color);
+}
+#theme-switch svg:last-child{
+  display: none;
+}
+.darkmode #theme-switch svg:first-child{
+  display: none;
+}
+.darkmode #theme-switch svg:last-child{
+  display: block;
+}
+body {
+  font-family: "Comic Sans MS",sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--base-color);
+  color: var(--text-color);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.bigform{
+  font-size: 50px;
+}
+
+.allignbox{
+  width: 300px;
+  display:inline-block;
+}
+
+a:link {
+  color: deepskyblue;
+}
+
+a:visited {
+  color: red;
+}
+
+a{
+  font-size: 20px;
+}
+.allignbox1{
+  width: 500px;
+  display:inline-block;
+}
